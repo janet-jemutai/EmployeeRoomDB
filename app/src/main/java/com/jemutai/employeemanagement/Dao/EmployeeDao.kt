@@ -26,7 +26,7 @@ abstract  class EmployeeDao {
     abstract  fun  fetchAllEmployees(): Flow<List<Employee>>
 
     @Query("SELECT * FROM EMPLOYEES  where id =id")
-    abstract  fun  selectEmployee():Flow<Employee>
+    abstract  fun  fetchEmployee(id:Int):Flow<Employee>
 
 
 }
